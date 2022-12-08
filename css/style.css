@@ -1,2 +1,31 @@
 /* Cfont-family: 'Advent Pro', sans-serif;
 font-family: 'Bellota Text', cursive; */
+:root {
+  --primary-color: #f7fbfc;
+  --secondary-color: #d6e6f2;
+  --tertiary-color: #b9d7ea;
+  --querternary-color: #769fcd;
+}
+h1 {
+  font-family: "Bellota Text";
+  font-weight: bold;
+}
+h2,
+h3 {
+  font-family: "Bellota Text";
+}
+.hero {
+  background-color: var(--primary-color);
+  text-align: center;
+  padding: 160px 20px;
+}
+.btn-branding {
+  background: var(--querternary-color);
+  color: var(--primary-color);
+  border-radius: 4px;
+  font-size: 18px;
+  font-family: "Bellota Text";
+  line-height: 27px;
+  padding: 15px 30px;
+  margin-top: 15px;
+}
