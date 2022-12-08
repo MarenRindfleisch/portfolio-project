@@ -5,14 +5,16 @@ font-family: 'Bellota Text', cursive; */
   --secondary-color: #d6e6f2;
   --tertiary-color: #b9d7ea;
   --querternary-color: #769fcd;
+  --heading-font-family: "Bellota Text";
+  --paragraph-font-family: "Advent Pro";
 }
 h1 {
-  font-family: "Bellota Text";
+  font-family: var(--heading-font-family);
   font-weight: bold;
 }
 h2,
 h3 {
-  font-family: "Bellota Text";
+  font-family: var(--heading-font-family);
 }
 .hero {
   background-color: var(--primary-color);
@@ -24,8 +26,28 @@ h3 {
   color: var(--primary-color);
   border-radius: 4px;
   font-size: 18px;
-  font-family: "Bellota Text";
+  font-family: var(--heading-font-family);
   line-height: 27px;
   padding: 15px 30px;
   margin-top: 15px;
+}
+.introduction img,
+p {
+  border-radius: 5px;
+  padding: 5px;
+  border: var(--querternary-color) 1px solid;
+  margin: 25px;
+}
+.introduction p {
+  font-size: 25px;
+  font-family: var(--paragraph-font-family);
+}
+
+@media (max-width: 768px) {
+  .introduction {
+    text-align: center;
+  }
+  .hero {
+    padding: 80px 10px;
+  }
 }
