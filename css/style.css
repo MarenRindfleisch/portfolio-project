@@ -17,6 +17,18 @@ h2,
 h3 {
   font-family: var(--heading-font-family);
 }
+img,
+p {
+  border-radius: 5px;
+  padding: 10px;
+  border: var(--querternary-color) 1px solid;
+  margin: 5px 0px 5px 0px;
+  max-width: 100%;
+}
+p {
+  font-size: 25px;
+  font-family: var(--paragraph-font-family);
+}
 .hero {
   background-color: var(--primary-color);
   text-align: center;
@@ -25,6 +37,7 @@ h3 {
   border-radius: 5px;
   margin: 5px 12px;
 }
+
 .btn-branding {
   background: var(--querternary-color);
   color: var(--primary-color);
@@ -35,21 +48,16 @@ h3 {
   padding: 15px 30px;
   margin-top: 15px;
 }
-.introduction img,
-p {
-  border-radius: 5px;
-  padding: 10px;
-  border: var(--querternary-color) 1px solid;
-  margin: 5px 0px 5px 0px;
-  max-width: 100%;
-}
-.introduction p {
-  font-size: 25px;
-  font-family: var(--paragraph-font-family);
+.professional-projects img {
+  border: none;
+  background-color: var(--primary-color);
 }
 
 @media (max-width: 768px) {
   .introduction {
+    text-align: center;
+  }
+  .professional-projects {
     text-align: center;
   }
 }
