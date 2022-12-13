@@ -4,13 +4,12 @@ font-family: 'Bellota Text', cursive; */
   --primary-color: #f7fbfc;
   --secondary-color: #d6e6f2;
   --tertiary-color: #b9d7ea;
-  --querternary-color: #769fcd;
+  --quarternary-color: #769fcd;
   --heading-font-family: "Bellota Text";
   --paragraph-font-family: "Advent Pro";
 }
 a {
   transition: all 200ms ease;
-  cursor: zoom-in;
 }
 h1,
 h2,
@@ -24,7 +23,7 @@ img,
 p {
   border-radius: 5px;
   padding: 10px;
-  border: var(--querternary-color) 1px solid;
+  border: var(--quarternary-color) 1px solid;
   margin: 5px 0px 5px 0px;
   max-width: 100%;
 }
@@ -34,6 +33,29 @@ p {
 }
 i {
   font-size: 25px;
+}
+nav ul {
+  padding: 0;
+  margin: 0;
+}
+nav li {
+  display: inline;
+  list-style: none;
+  line-height: 45px;
+  margin-left: 10px;
+}
+nav a {
+  text-decoration: none;
+  color: var(--tertiary-color);
+}
+
+nav a:hover,
+nav li.active a {
+  color: var(--quarternary-color);
+  transition: all 100ms ease-in-out;
+}
+nav {
+  padding: 0px 0px;
 }
 
 .hero {
@@ -46,7 +68,7 @@ i {
 }
 
 .btn-branding {
-  background: var(--querternary-color);
+  background: var(--quarternary-color);
   color: var(--primary-color);
   border-radius: 5px;
   font-size: 18px;
@@ -57,7 +79,7 @@ i {
 }
 .btn-branding:hover {
   background-color: var(--secondary-color);
-  color: var(--querternary-color);
+  color: var(--quarternary-color);
 }
 
 .professional-projects img {
@@ -84,6 +106,11 @@ i {
   border: none;
   background-color: var(--primary-color);
 }
+.logo {
+  max-width: 60px;
+  border: none;
+  padding: 0;
+}
 @media (max-width: 768px) {
   .introduction {
     text-align: center;
@@ -93,5 +120,11 @@ i {
   }
   .personal-projects {
     text-align: center;
+  }
+  .logo {
+    max-height: 40px;
+  }
+  nav a {
+    font-size: 12px;
   }
 }
