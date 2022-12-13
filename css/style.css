@@ -8,7 +8,10 @@ font-family: 'Bellota Text', cursive; */
   --heading-font-family: "Bellota Text";
   --paragraph-font-family: "Advent Pro";
 }
-
+a {
+  transition: all 200ms ease;
+  cursor: zoom-in;
+}
 h1,
 h2,
 h3 {
@@ -28,6 +31,9 @@ p {
 p {
   font-size: 25px;
   font-family: var(--paragraph-font-family);
+}
+i {
+  font-size: 25px;
 }
 
 .hero {
@@ -49,6 +55,11 @@ p {
   padding: 15px 30px;
   margin-top: 15px;
 }
+.btn-branding:hover {
+  background-color: var(--secondary-color);
+  color: var(--querternary-color);
+}
+
 .professional-projects img {
   border: none;
   background-color: var(--primary-color);
@@ -68,7 +79,11 @@ p {
 .personal-projects .travel img {
   margin: 15px auto;
 }
-
+.contact p {
+  margin: 15px 12px;
+  border: none;
+  background-color: var(--primary-color);
+}
 @media (max-width: 768px) {
   .introduction {
     text-align: center;
