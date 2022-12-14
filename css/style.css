@@ -123,8 +123,21 @@ footer .social-links a:hover {
   border: none;
   padding: 0;
 }
+.open-sourced {
+  border: none;
+  display: block;
+  text-align: center;
+  padding: 1px;
+}
+.open-sourced a {
+  color: var(--quarternary-color);
+  margin: 0;
+}
 
 @media (max-width: 768px) {
+  .hero {
+    padding: 30px 5px;
+  }
   .introduction {
     text-align: center;
   }
@@ -138,6 +151,6 @@ footer .social-links a:hover {
     max-height: 40px;
   }
   nav a {
-    font-size: 12px;
+    font-size: 13px;
   }
 }
